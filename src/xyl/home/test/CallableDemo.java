@@ -11,5 +11,10 @@ public class CallableDemo {
         new Thread(futureTask,"A").start();
         String result = futureTask.get();
         System.out.println(result);
+
+        Cake cake = new Cake();
+        System.out.println(cake.getClass().getClassLoader().getParent().getParent());
+        System.out.println(cake.getClass().getClassLoader().getParent());
+        System.out.println(cake.getClass().getClassLoader());
     }
 }
