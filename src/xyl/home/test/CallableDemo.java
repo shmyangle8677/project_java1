@@ -12,6 +12,12 @@ public class CallableDemo {
         String result = futureTask.get();
         System.out.println(result);
 
+        /*双亲委派机制
+        类加载器总共有4种
+        1、根加类加载器
+        2、扩展加载类器
+        3、应用程序加载器
+        4、自定义类加载器*/
         Cake cake = new Cake();
         System.out.println(cake.getClass().getClassLoader().getParent().getParent());
         System.out.println(cake.getClass().getClassLoader().getParent());
